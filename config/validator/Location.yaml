@@ -1,0 +1,19 @@
+App\Entity\Location:
+    properties:
+        city:
+            - NotBlank: ~
+            - Length:
+                  min: 2
+                  max: 255
+        country:
+            - NotBlank: ~
+        latitude:
+            - NotBlank: ~
+            - Range:
+                  min: -90
+                  max: 90
+        longitude:
+            - NotBlank: ~
+            - Range:
+                  min: -180
+                  max: 180

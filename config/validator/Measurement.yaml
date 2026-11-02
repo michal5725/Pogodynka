@@ -1,0 +1,11 @@
+App\Entity\Measurement:
+    properties:
+        celsius:
+            - NotBlank: ~
+            - Range:
+                  min: -50
+                  max: 50
+        date:
+            - NotBlank: ~
+        location:
+            - NotBlank: ~
